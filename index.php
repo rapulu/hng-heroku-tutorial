@@ -12,9 +12,7 @@
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
   </head>
-
   <body>
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,14 +51,13 @@
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
         <p class="lead">
+          <!-- php env -->
           <?php
             echo "This text is coming from php. <br/> This means php is working"
           ?>
         </p>
       </div>
-
     </main><!-- /.container -->
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
