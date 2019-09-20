@@ -1,8 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "hng";
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$servername = $cleardb_url["host"];;
+$username = $cleardb_url["user"];
+$password = $cleardb_url["pass"];
+$dbname = substr($cleardb_url["path"],1);
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
